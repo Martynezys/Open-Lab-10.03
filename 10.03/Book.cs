@@ -60,6 +60,34 @@ namespace ConsoleApp1
             }
         }
 
+        public Book () 
+        {
+            this.title = "-1";
+            this.pages = -1;
+            this.category= "-1";
+            this.author = "-1";
+            this.releaseDate = -1;
+        }
+
+        public Book (string xTitle, int xPages)
+        {
+            this.title = xTitle;
+            this.pages = xPages;
+            
+            this.category= "-1";
+            this.author = "-1";
+            this.releaseDate = -1;
+        }
+
+        public Book (string xTitle, int XPages, string xCategory, string xAuthor, int xReleaseDate)
+        {
+            this.title = xTitle;
+            this.pages = XPages;
+            this.category = xCategory;
+            this.author = xAuthor;
+            this.releaseDate = xReleaseDate;
+        }
+
 
 
 

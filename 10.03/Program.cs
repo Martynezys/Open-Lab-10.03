@@ -10,16 +10,17 @@ namespace ConsoleApp1
     {
         static void Main(string[] args)
         {
-            Book LOTR=new Book();
-            
-            
-            LOTR.Title= "Lord of The Rings";
-            LOTR.Pages= 1028;
-            LOTR.Category= "Fantazy";
-            LOTR.Author= "Oliver Krska";
-            LOTR.ReleaseDate= 1985;
-            LOTR.OlkoBolko();
+            Book LOTR=new Book("Lord of The Rings", 1028, "Fantasy", "Oliver Krska", 1985);
+
+            Book LOTR2= new Book("Lord of The Rings 2", 416, "Fantasy", "Oliver Krska", 1987);
+
+            Book LOTR3= new Book("Lord of The Rings 3", 512, "Fantasy", "Oliver Krska", 1989);
+
+            Book HOBIT= new Book("Hobit", 420, "Fantasy", "Oliver Krska", 1986);
+
+            HOBIT.OlkoBolko();
             Console.ReadLine();
+
         }
     }
 }
